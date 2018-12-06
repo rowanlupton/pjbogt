@@ -1,7 +1,3 @@
-***work in progress***
-
----------
-
 # pjbogt
 Weird flex but ok.
 
