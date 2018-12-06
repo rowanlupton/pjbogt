@@ -28,6 +28,6 @@ class StreamListener(tweepy.StreamListener):
 
 streamListener = StreamListener()
 stream = tweepy.Stream(auth=api.auth, listener=streamListener)
-stream.filter(follow=follow, async=True)
+stream.filter(follow=follow)
 
 # api.update_status("*slaps roof of alex goldman* this bad boy can fit so many weird flexes")
