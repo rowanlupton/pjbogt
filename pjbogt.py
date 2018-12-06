@@ -30,4 +30,4 @@ streamListener = StreamListener()
 stream = tweepy.Stream(auth=api.auth, listener=streamListener)
 stream.filter(follow=follow, async=True)
 
-api.update_status("*slaps roof of alex goldman* this bad boy can fit so many weird flexes")
+# api.update_status("*slaps roof of alex goldman* this bad boy can fit so many weird flexes")
