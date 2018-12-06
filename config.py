@@ -9,8 +9,10 @@ ACCESS_SECRET = os.getenv("ACCESS_SECRET")
 HANDLE = 'pjbogt'
 
 listenFor = [
-    '@'+HANDLE,
-    'from:AGoldmund'
+    '@'+HANDLE
+]
+follow = [
+    '42214901'
 ]
 responses = [
     'weird flex but ok'
