@@ -19,11 +19,12 @@ class StreamListener(tweepy.StreamListener):
             # updates for the new twitter api
 
             # api.send_direct_message(screen_name='rowanlupton', text="pjbogt is down")
-            print('pjbogt failed with status_code: ', status_code)
+            print('pjbogt: failed with status_code: ', status_code)
     def on_status(self, status):
         if status.user.id_str in follow:
             if not hasattr(status, 'retweeted_status'):
-                if tweet.in_reply_to_status_id is not None:
+                print('pjbogt: Alex has tweeted: ', tweet)
+                if tweet.in_reply_to_status_id is None:
                     api.update_status(random.choice(responses), in_reply_to_status_id=status.id, auto_populate_reply_metadata=True)
 
 
