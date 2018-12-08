@@ -23,8 +23,7 @@ class StreamListener(tweepy.StreamListener):
     def on_status(self, status):
         if status.user.id_str in follow:
             if not hasattr(status, 'retweeted_status'):
-                print('pjbogt: Alex has tweeted: ', tweet)
-                if tweet.in_reply_to_status_id is None:
+                if status.in_reply_to_status_id is None:
                     api.update_status(random.choice(responses), in_reply_to_status_id=status.id, auto_populate_reply_metadata=True)
 
 
